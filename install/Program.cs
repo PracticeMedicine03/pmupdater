@@ -78,7 +78,8 @@ namespace Install // Note: actual namespace depends on the project name.
                 string mod_path = "";
                 RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Valve\\Steam");
                 mod_path = key.GetValue("SourceModInstallPath").ToString();
-                if(Directory.Exists(mod_path))
+                string ef2_path = mod_path + "\\tf2i";
+                if(Directory.Exists(ef2_path))
                 {
                     Console.WriteLine("Error!");
                     Console.WriteLine("EF2 is already installed in your computer.");
