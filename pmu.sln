@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pmu", "pmu.csproj", "{C7F85C7C-B001-486B-9AAA-0DDFC34B3A39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pmu", "pmu\pmu.csproj", "{C7F85C7C-B001-486B-9AAA-0DDFC34B3A39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "install", "..\install\install.csproj", "{DEB2F9FF-FEE8-4871-8A04-5076C6A11D3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "install", "install\install.csproj", "{DEB2F9FF-FEE8-4871-8A04-5076C6A11D3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
