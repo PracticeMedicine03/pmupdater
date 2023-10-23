@@ -12,8 +12,8 @@ namespace Install // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             bool show_help = false;
-            bool install_ef2 = false;
-            bool update_ef2 = false;
+            bool install_mod = false;
+            bool update_mod = false;
             List<string> names = new List<string>();
             int repeat = 1;
 
@@ -50,13 +50,13 @@ namespace Install // Note: actual namespace depends on the project name.
                 return;
             }
 
-            if (install_ef2)
+            if (install_mod)
             {
                 InstallMod(p);
                 return;
             }
 
-            if (update_ef2)
+            if (update_mod)
             {
                 UpdateMod(p);
                 return;
@@ -74,15 +74,15 @@ namespace Install // Note: actual namespace depends on the project name.
 
             static void InstallMod(OptionSet p)
             {
-                Console.WriteLine("Installing EF2...");
-                string mod_path = "";
+                Console.WriteLine("Installing Mod...");
+                string sourcemod_path = "";
                 RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Valve\\Steam");
-                mod_path = key.GetValue("SourceModInstallPath").ToString();
-                string ef2_path = mod_path + "\\tf2i";
-                if(Directory.Exists(ef2_path))
+                sourcemod_path = key.GetValue("SourceModInstallPath").ToString();
+                string mod_path = sourcemod_path + "\\mod";
+                if(Directory.Exists(mod_path))
                 {
                     Console.WriteLine("Error!");
-                    Console.WriteLine("EF2 is already installed in your computer.");
+                    Console.WriteLine("Mod is already installed in your computer.");
                     Console.WriteLine("Press enter to exit...");
                     Console.ReadLine();
                 }
