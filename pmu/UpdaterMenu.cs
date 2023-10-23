@@ -22,8 +22,8 @@ namespace ef2_updater
             Thread t = new Thread(new ThreadStart(StartForm));
             t.Start();
             Thread.Sleep(6000);
-            string ef2updater_binpath = "bin";
-            if (Directory.Exists(ef2updater_binpath))
+            string updater_binpath = "bin";
+            if (Directory.Exists(updater_binpath))
             {
                 InitializeComponent();
             }
@@ -46,11 +46,11 @@ namespace ef2_updater
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string ef2updater_binpath = "bin";
+            string updater_binpath = "bin";
             //const string EF2_Path;
-            if (Directory.Exists(ef2updater_binpath))
+            if (Directory.Exists(updater_binpath))
             {
-                Process.Start(ef2updater_binpath + "\\install.exe", "-install");
+                Process.Start(updater_binpath + "\\install.exe", "-install");
             }
             else
             {
@@ -60,10 +60,10 @@ namespace ef2_updater
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string ef2updater_binpath = "bin";
-            if (Directory.Exists(ef2updater_binpath))
+            string updater_binpath = "bin";
+            if (Directory.Exists(updater_binpath))
             {
-                Process.Start(ef2updater_binpath + "\\install.exe", "-update");
+                Process.Start(updater_binpath + "\\install.exe", "-update");
             }
             else
             {
@@ -73,10 +73,10 @@ namespace ef2_updater
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
-            string ef2updater_binpath = "bin";
-            if (Directory.Exists(ef2updater_binpath))
+            string updater_binpath = "bin";
+            if (Directory.Exists(updater_binpath))
             {
-                Process.Start(ef2updater_binpath + "\\install.exe", "-update");
+                Process.Start(updater_binpath + "\\install.exe", "-update");
             }
             else
             {
