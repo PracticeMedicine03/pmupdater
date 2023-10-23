@@ -25,9 +25,9 @@ namespace Install // Note: actual namespace depends on the project name.
                 { "h|help",  "show this message and exit",
                     v => show_help = v != null },
                 { "i|install",  "Install a sourcemod (Only EF2 as of this edition)",
-                    v => install_ef2 = v != null },
+                    v => install_mod = v != null },
                 { "u|update",  "Update your sourcemod's client",
-                    v => update_ef2 = v != null },
+                    v => update_mod = v != null },
             };
 
             List<string> extra;
