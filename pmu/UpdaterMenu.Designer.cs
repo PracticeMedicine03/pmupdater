@@ -165,7 +165,7 @@ namespace ef2_updater
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(304, 90);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Version - 0.1.1000.0\r\n\r\nPracticeMedicine\'s Updater \r\n\r\nCopyright (c) 2023 Practic" +
+            this.label2.Text = "Version - 0.1.1000.0\r\n\r\nPracticeMedicine\'s Updater for FC \r\n\r\nCopyright (c) 2023 Practic" +
     "eMedicine, All Rights Reversed\r\nLicensed under GPLv2\r\n";
             // 
             // label1
