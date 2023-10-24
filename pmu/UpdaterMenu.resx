@@ -117,23 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Version - 0.1.1000.0
-
-Unauthorised use or disclosure in any
-manner may result in disciplinary action
-up to and including termination of employment
-(in the case of EF2 dev team members), termination
-of an assignment or contract (in the case
-of contigent staff), and potential civil and
-criminal liability.
-
-PracticeMedicine's Updater (for EF2)
-
-Copyright (c) 2023 EF2 Team, All Rights Reversed
-Licensed under GPLv2
-</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

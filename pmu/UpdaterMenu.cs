@@ -13,6 +13,8 @@ using Microsoft.Win32;
 using System.Diagnostics;
 using Guna.UI2.WinForms;
 
+using PMU.Functions;
+
 namespace ef2_updater
 {
     public partial class UpdaterMenu : Form
@@ -47,6 +49,7 @@ namespace ef2_updater
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             string updater_binpath = "bin";
+            Sound.UI.UI_OnPressed();
             //const string EF2_Path;
             if (Directory.Exists(updater_binpath))
             {
@@ -61,6 +64,7 @@ namespace ef2_updater
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             string updater_binpath = "bin";
+            Sound.UI.UI_OnPressed();
             if (Directory.Exists(updater_binpath))
             {
                 Process.Start(updater_binpath + "\\install.exe", "-update");
@@ -74,6 +78,7 @@ namespace ef2_updater
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
             string updater_binpath = "bin";
+            Sound.UI.UI_OnPressed();
             if (Directory.Exists(updater_binpath))
             {
                 Process.Start(updater_binpath + "\\install.exe", "-update");

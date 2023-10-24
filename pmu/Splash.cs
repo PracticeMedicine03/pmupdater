@@ -35,7 +35,7 @@ namespace ef2_updater
             timer1.Enabled = false;
             if(currentColor < colors.Count - 1)
             {
-                this.BackColor = Bunifu.Framework.UI.BunifuColorTransition.getColorScale(a, colors[currentColor], colors[currentColor + 1]);
+               // this.BackColor = Bunifu.Framework.UI.BunifuColorTransition.getColorScale(a, colors[currentColor], colors[currentColor + 1]);
                 if(a < 100)
                 {
                     a++;

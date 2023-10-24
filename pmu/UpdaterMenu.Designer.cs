@@ -92,11 +92,11 @@ namespace ef2_updater
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(133, 82);
+            this.label3.Location = new System.Drawing.Point(102, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(360, 26);
+            this.label3.Size = new System.Drawing.Size(442, 26);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Welcome to EF2\'s New Downloader!";
+            this.label3.Text = "Welcome to PracticeMedicine\'s Downloader!";
             // 
             // guna2Button2
             // 
@@ -163,18 +163,19 @@ namespace ef2_updater
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(48, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(279, 210);
+            this.label2.Size = new System.Drawing.Size(304, 90);
             this.label2.TabIndex = 1;
-            this.label2.Text = resources.GetString("label2.Text");
+            this.label2.Text = "Version - 0.1.1000.0\r\n\r\nPracticeMedicine\'s Updater \r\n\r\nCopyright (c) 2023 Practic" +
+    "eMedicine, All Rights Reversed\r\nLicensed under GPLv2\r\n";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 15);
+            this.label1.Size = new System.Drawing.Size(187, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "About PracticeMedicine\'s Updater for Early Fortress 2";
+            this.label1.Text = "About PracticeMedicine\'s Updater";
             // 
             // UpdaterMenu
             // 
