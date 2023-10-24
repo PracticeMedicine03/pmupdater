@@ -68,7 +68,7 @@ namespace ef2_updater
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "for EF2";
+            this.label2.Text = "for FC";
             // 
             // timer1
             // 
