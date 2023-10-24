@@ -88,11 +88,11 @@ namespace Install // Note: actual namespace depends on the project name.
                 string sourcemod_path = "";
                 RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Valve\\Steam");
                 sourcemod_path = key.GetValue("SourceModInstallPath").ToString();
-                string mod_path = sourcemod_path + "\\mod";
+                string mod_path = sourcemod_path + "\\fc";
                 if(Directory.Exists(mod_path))
                 {
                     Console.WriteLine("Error!");
-                    Console.WriteLine("Mod is already installed in your computer.");
+                    Console.WriteLine("Fortress Connected is already installed in your computer.");
                     Console.WriteLine("Press enter to exit...");
                     Console.ReadLine();
                 }
@@ -113,7 +113,7 @@ namespace Install // Note: actual namespace depends on the project name.
                 string sourcemod_path = "";
                 RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Valve\\Steam");
                 sourcemod_path = key.GetValue("SourceModInstallPath").ToString();
-                string mod_path = sourcemod_path + "\\mod";
+                string mod_path = sourcemod_path + "\\fc";
 
                 if (Directory.Exists(mod_path))
                 {
@@ -130,7 +130,7 @@ namespace Install // Note: actual namespace depends on the project name.
 
             static void UpdateMod(OptionSet p)
             {
-                Console.WriteLine("Updating EF2...");
+                Console.WriteLine("Updating FC...");
                 Download.Downloader_Update();
                 Console.WriteLine();
                 Console.WriteLine("This utility is paused unless any keys are pressed. This is to catch errors during installation.");
