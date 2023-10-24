@@ -15,13 +15,13 @@ namespace Install.Functions
             string sourcemod_path = "";
             RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Valve\\Steam");
             sourcemod_path = key.GetValue("SourceModInstallPath").ToString();
-            string mod_path = sourcemod_path + "\\mod";
+            string mod_path = sourcemod_path + "\\fc";
 
             Process.Start(".\\bin\\bin\\git", "config --global http.postBuffer 524288000");
             Process.Start(".\\bin\\bin\\git", "config --global http.maxRequestBuffer 524288000");
             Process.Start(".\\bin\\bin\\git", "config --global core.compression 9");
             Process.Start(".\\bin\\bin\\git", "config --system credential.helper manager-core");
-            Process.Start(".\\bin\\bin\\git", "clone --depth 1 https://github.com/Daisreich/tf2i " + mod_path + "\\tf2i");
+            Process.Start(".\\bin\\bin\\git", "clone --depth 1 https://github.com/Lambdagon/fc " + mod_path);
         }
 
         public static void Downloader_Update()
@@ -35,8 +35,8 @@ namespace Install.Functions
             Process.Start(".\\bin\\bin\\git", "config --system credential.helper manager-core");
 
             // PracticeMedicine; We used "+" instead of a comma (",") because we need to prevent the overload arguments error.
-            Process.Start(".\\bin\\bin\\git", "-C " + mod_path + "\\mod " + "fetch --depth 1");
-            Process.Start(".\\bin\\bin\\git", "-C " + mod_path + "\\mod " + "reset --hard origin/HEAD");
+            Process.Start(".\\bin\\bin\\git", "-C " + mod_path + "\\fc " + "fetch --depth 1");
+            Process.Start(".\\bin\\bin\\git", "-C " + mod_path + "\\fc " + "reset --hard origin/HEAD");
         }
         public static void Downloader_Run()
         {
@@ -45,7 +45,7 @@ namespace Install.Functions
             RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Valve\\Steam");
             sourcemod_path = key.GetValue("SourceModInstallPath").ToString();
             steam_path = key.GetValue("SteamPath").ToString();
-            string mod_path = sourcemod_path + "\\mod";
+            string mod_path = sourcemod_path + "\\fc";
 
             Process.Start(@"steam.exe" + "-applaunch 243750" + "-game " + mod_path + "-windowed -noborder" + "-w 1920 -h 1080");
         }
