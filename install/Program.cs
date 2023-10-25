@@ -12,6 +12,7 @@ namespace Install // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
+            bool show_vers = false;
             bool show_help = false;
             bool install_mod = false;
             bool run_mod = false;
@@ -24,6 +25,8 @@ namespace Install // Note: actual namespace depends on the project name.
 
             var p = new OptionSet()
             {
+                { "v|version", "Show version details, it's like the About Box",
+                    v => show_vers = v != null },
                 { "h|help",  "show this message and exit",
                     v => show_help = v != null },
                 { "i|install",  "Install a sourcemod",
@@ -45,6 +48,12 @@ namespace Install // Note: actual namespace depends on the project name.
                 //Console.Write("greet: ");
                 Console.WriteLine(e.Message);
                 Console.WriteLine("Try `install --help' for more information.");
+                return;
+            }
+
+            if(show_vers)
+            {
+                ShowVersion(p);
                 return;
             }
 
@@ -70,6 +79,17 @@ namespace Install // Note: actual namespace depends on the project name.
             {
                 RunMod(p);
                 return;
+            }
+
+            static void ShowVersion(OptionSet p)
+            {
+                Console.WriteLine("================== Full version details are at the bottom of this line ==================");
+                Console.WriteLine("Version: 1.0.1");
+                Console.WriteLine("Build Number: 1056.1");
+                Console.WriteLine("Branch: FC branch");
+                Console.WriteLine("Codename: pm.pmupdater.fc");
+                Console.WriteLine("Full String: 1.0.1056.1.1.fc.pm.pmupdater.fc");
+                Console.WriteLine("=========================================================================================");
             }
 
             static void ShowHelp(OptionSet p)

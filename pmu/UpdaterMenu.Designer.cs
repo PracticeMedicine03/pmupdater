@@ -1,5 +1,5 @@
 ﻿
-namespace ef2_updater
+namespace fc_updater
 {
     partial class UpdaterMenu
     {

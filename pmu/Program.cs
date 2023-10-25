@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ef2_updater
+namespace fc_updater
 {
     static class Program
     {

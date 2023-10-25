@@ -47,7 +47,7 @@ namespace Install.Functions
             steam_path = key.GetValue("SteamPath").ToString();
             string mod_path = sourcemod_path + "\\fc";
 
-            Process.Start(@"steam.exe" + "-applaunch 243750" + "-game " + mod_path + "-windowed -noborder" + "-w 1920 -h 1080");
+            Process.Start(steam_path + "\\steam.exe" + "-applaunch 243750" + "-game " + mod_path + "-windowed -noborder" + "-w 1920 -h 1080");
         }
     }
 }

@@ -15,7 +15,7 @@ using Guna.UI2.WinForms;
 
 using PMU.Functions;
 
-namespace ef2_updater
+namespace fc_updater
 {
     public partial class UpdaterMenu : Form
     {

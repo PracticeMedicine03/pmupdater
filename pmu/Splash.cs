@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ef2_updater
+namespace fc_updater
 {
     // Non of this shit works but its better
     public partial class Splash : Form

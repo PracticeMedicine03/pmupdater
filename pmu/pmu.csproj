@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C7F85C7C-B001-486B-9AAA-0DDFC34B3A39}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ef2_updater</RootNamespace>
-    <AssemblyName>ef2_updater</AssemblyName>
+    <RootNamespace>fc_updater</RootNamespace>
+    <AssemblyName>fc_updater</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -237,6 +237,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
